@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>NORM | فلسفة ومنهجية نورم</title>
+
+    <!-- ══ SEO Core ════════════════════════════════════════════ -->
+    <meta
+      name="description"
+      content="منهجية NORM | نُهج هندسة القرار الاستراتيجي والنضج المؤسسي. اكتشف كيف نصمم البيئة التي تولد فيها القرارات الصحيحة عبر خمس مراحل تراكمية تضمن أثر القرار واستدامته." />
+    <meta
+      name="keywords"
+      content="منهجية نورم, هندسة القرار, النضج المؤسسي, التدرج الاستراتيجي, إدارة المعرفة المؤسسية, الرقابة والامتثال, استشارات استراتيجية" />
+    <meta name="author" content="NORM Decision Architecture House" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#07000F" />
+    <link
+      rel="canonical"
+      href="https://amr-an3m.github.io/NORM_House/methodology.html" />
+
+    <!-- ══ Open Graph ════════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://amr-an3m.github.io/NORM_House/methodology.html" />
+    <meta property="og:site_name" content="NORM" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:title" content="المنهجية | NORM — دار هندسة القرار" />
+    <meta
+      property="og:description"
+      content="اكتشف كيف نصمم البيئة التي تولد فيها القرارات الصحيحة عبر خمس مراحل تراكمية تضمن رصانة القرار وأثره المؤسسي." />
+    <meta
+      property="og:image"
+      content="https://amr-an3m.github.io/NORM_House/images/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- ══ Twitter Card ════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="المنهجية | NORM — دار هندسة القرار" />
+    <meta
+      name="twitter:description"
+      content="منهجية NORM لهندسة القرار الاستراتيجي: من التأصيل إلى الأثر المؤسسي المستدام." />
+    <meta
+      name="twitter:image"
+      content="https://amr-an3m.github.io/NORM_House/images/logo.png" />
+
+    <!-- ══ JSON-LD Structured Data (Breadcrumbs) ════════════════ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://amr-an3m.github.io/NORM_House/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "المنهجية",
+            "item": "https://amr-an3m.github.io/NORM_House/methodology.html"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ══ Icons (Font Awesome) ══════════════════════════════ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- ══ Fonts ════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- ══ Critical: Language Flash Prevention ══════════════════ -->
+    <script>
+      (function () {
+        const savedLang = localStorage.getItem("lang");
+        const browserLang = navigator.language.startsWith("en") ? "en" : "ar";
+        const lang = savedLang || browserLang;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        document.documentElement.classList.add("js-loading");
+      })();
+    </script>
+    <style>
+      .js-loading body > *:not(.loader-screen) {
+        opacity: 0;
+      }
+      .js-loading .loader-screen {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ═══════════════════════ Scroll Progress ═══════════════════════ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ═══════════════════════ Menu Overlay (mobile) ══════════════════ -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="القائمة الرئيسية">
+      <div class="nav-container">
+        <!-- ── Brand ── -->
+        <div class="nav-brand">
+          <a href="index.html" class="logo-link">
+            <img
+              src="images/logo.png"
+              alt="NORM"
+              class="logo-img"
+              loading="lazy" />
+            <span class="logo-text">NORM</span>
+          </a>
+        </div>
+
+        <!-- ── Navigation Menu (Desktop Inline / Mobile Sidebar) ── -->
+        <div class="nav-menu" id="navMenu">
+          <div class="nav-menu-header">
+            <div class="nav-brand">
+              <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="NORM" class="logo-img" />
+                <span class="logo-text">NORM</span>
+              </a>
+            </div>
+            <button
+              class="mobile-close"
+              id="mobileClose"
+              aria-label="إغلاق القائمة">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="nav-menu-body">
+            <ul class="nav-links" role="list">
+              <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+              <li>
+                <a
+                  href="methodology.html"
+                  data-i18n="nav_methodology"
+                  class="active"
+                  >المنهجية</a
+                >
+              </li>
+              <li>
+                <a href="index.html#services" data-i18n="nav_services"
+                  >المنظومات</a
+                >
+              </li>
+              <li>
+                <a href="index.html#investment" data-i18n="nav_investment"
+                  >الإستثمار</a
+                >
+              </li>
+              <li>
+                <a href="index.html#insights" data-i18n="nav_insights">الرؤى</a>
+              </li>
+              <li>
+                <a href="index.html#contact" data-i18n="nav_contact">التواصل</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-menu-footer">
+            <div class="mobile-nav-actions">
+              <button
+                class="lang-toggle"
+                data-lang-toggle
+                aria-label="تبديل اللغة">
+                <i class="fas fa-globe"></i>
+                <span class="lang-text">EN</span>
+              </button>
+              <a
+                href="index.html#contact"
+                class="btn btn-primary btn-sm menu-cta"
+                data-i18n="cta_start"
+                >ابدأ التأهيل</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Desktop Actions ── -->
+        <div class="nav-actions desktop-only">
+          <button class="lang-toggle" data-lang-toggle aria-label="تبديل اللغة">
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+          <a
+            href="index.html#contact"
+            class="btn btn-primary btn-sm"
+            data-i18n="cta_start"
+            >ابدأ التأهيل</a
+          >
+        </div>
+
+        <!-- ── Mobile Toggle ── -->
+        <button
+          class="mobile-toggle"
+          id="mobileToggle"
+          aria-label="فتح القائمة"
+          aria-expanded="false"
+          aria-controls="navMenu">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ══ MAIN CONTENT ══════════════════════════════════════════ -->
+    <main id="main-content">
+      <!-- ══ PAGE HERO ═══════════════════════════════════════════ -->
+      <section class="page-hero" aria-label="المنهجية">
+        <div class="container" data-reveal="fade-up">
+          <span class="page-subtitle" data-i18n="methodology_pg_hero_subtitle"
+            >هندسة القرار | صياغة المنطق</span
+          >
+          <h1
+            class="page-title heading-1"
+            data-i18n="methodology_pg_hero_title">
+            هندسة القرار.. من التأسيس<br />إلى الأثر المؤسسي
+          </h1>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html" data-i18n="index">الرئيسية /</a>
+            <span class="current" data-i18n="nav_methodology">المنهجية</span>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ══ PHILOSOPHY PREMIUM ════════════════════════════════════ -->
+      <section class="philosophy-premium">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- ── Text Panel ── -->
+            <div class="hero-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text" data-i18n="philosophy_label"></span>
+            </div>
+            <div class="hero-text-panel" data-reveal="fade-inline-start">
+              <h2 class="premium-quote" data-i18n="methodology_quote">
+                نحن لا نصمم وثائق، بل نصمم البيئة التي تُولد فيها القرارات
+                الرشيدة
+              </h2>
+              <p class="premium-desc" data-i18n="methodology_quote_desc">
+                بصفتنا مكتباً استشارياً تنفيذياً (EAO)، نتموضع كعقل مؤسسي ضابط؛
+                نمنح قيادتك المعيار والمسطرة ليكون كل قرار مدعوماً ببصمة فكرية
+                رفيعة.
+              </p>
+            </div>
+
+            <!-- ── Geometry Visual (Hidden on mobile via hero-geo) ── -->
+            <div class="hero-geo" data-reveal="fade-in">
+              <div class="geo-composition">
+                <div class="geo-ring geo-ring-1"></div>
+                <div class="geo-ring geo-ring-2"></div>
+                <div class="geo-ring geo-ring-3"></div>
+                <div class="geo-logo">
+                  <img src="images/logo.png" alt="NORM Logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ CINEMATIC BAR DIAGRAM ═══════════════════════════════════ -->
+      <section
+        class="diagram-section"
+        aria-label="العلاقة التراكمية بين المراحل الخمس">
+        <div class="diagram-bg-glow" aria-hidden="true"></div>
+
+        <div class="container">
+          <div class="diagram-layout">
+            <!-- ── Left: Intro Panel ── -->
+            <div class="diagram-intro" data-reveal="fade-up">
+              <h2 class="diagram-intro-title">
+                <span data-i18n="methodology_diagram_title"
+                  >العلاقة التراكمية</span
+                >
+                <span
+                  class="diagram-intro-accent"
+                  data-i18n="methodology_diagram_accent"
+                  >بين المراحل الخمس</span
+                >
+              </h2>
+              <p
+                class="diagram-intro-desc"
+                data-i18n="methodology_diagram_desc">
+                كل مرحلة تُبنى على ما قبلها، لتشكّل معاً منظومة متكاملة تضمن
+                فاعلية القرار الاستراتيجي واستدامته.
+              </p>
+            </div>
+
+            <!-- ── Right: Bar Chart ── -->
+            <div
+              class="diagram-chart-wrap"
+              data-reveal="fade-up"
+              data-reveal-delay="200">
+              <!-- SVG curved dashed arrows -->
+              <svg
+                class="chart-arrows"
+                id="chartArrows"
+                aria-hidden="true"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                overflow="visible">
+                <defs>
+                  <marker
+                    id="arr-tip"
+                    markerWidth="7"
+                    markerHeight="7"
+                    refX="5"
+                    refY="3.5"
+                    orient="auto">
+                    <path d="M0,0 L0,7 L7,3.5 z" fill="#D1007B" opacity="0.9" />
+                  </marker>
+                </defs>
+              </svg>
+
+              <div class="chart-bars" id="chartBars">
+                <!-- Phase 1 -->
+                <div class="chart-bar bar-h-1" data-bar="1">
+                  <div class="bar-pillar">
+                    <div class="bar-icon-ring">
+                      <i class="fas fa-crosshairs" aria-hidden="true"></i>
+                    </div>
+                    <span class="bar-num en-font" data-i18n="methodology_phase_1_sub">01</span>
+                    <h3 class="bar-title" data-i18n="methodology_phase_1"></h3>
+                    <p class="bar-desc" data-i18n="methodology_phase_1_desc"></p>
+                  </div>
+                  <div class="bar-ground-dot"></div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="chart-bar bar-h-2" data-bar="2">
+                  <div class="bar-pillar">
+                    <div class="bar-icon-ring">
+                      <i class="fas fa-sitemap" aria-hidden="true"></i>
+                    </div>
+                    <span class="bar-num en-font" data-i18n="methodology_phase_2_sub">02</span>
+                    <h3 class="bar-title" data-i18n="methodology_phase_2"></h3>
+                    <p class="bar-desc" data-i18n="methodology_phase_2_desc"></p>
+                  </div>
+                  <div class="bar-ground-dot"></div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="chart-bar bar-h-3" data-bar="3">
+                  <div class="bar-pillar">
+                    <div class="bar-icon-ring">
+                      <i class="fas fa-route" aria-hidden="true"></i>
+                    </div>
+                    <span class="bar-num en-font" data-i18n="methodology_phase_3_sub">03</span>
+                    <h3 class="bar-title" data-i18n="methodology_phase_3"></h3>
+                    <p class="bar-desc" data-i18n="methodology_phase_3_desc"></p>
+                  </div>
+                  <div class="bar-ground-dot"></div>
+                </div>
+
+                <!-- Phase 4 -->
+                <div class="chart-bar bar-h-4" data-bar="4">
+                  <div class="bar-pillar">
+                    <div class="bar-icon-ring">
+                      <i class="fas fa-layer-group" aria-hidden="true"></i>
+                    </div>
+                    <span class="bar-num en-font" data-i18n="methodology_phase_4_sub">04</span>
+                    <h3 class="bar-title" data-i18n="methodology_phase_4"></h3>
+                    <p class="bar-desc" data-i18n="methodology_phase_4_desc"></p>
+                  </div>
+                  <div class="bar-ground-dot"></div>
+                </div>
+
+                <!-- Phase 5 -->
+                <div class="chart-bar bar-h-5" data-bar="5">
+                  <div class="bar-pillar">
+                    <div class="bar-icon-ring">
+                      <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                    </div>
+                    <span class="bar-num en-font" data-i18n="methodology_phase_5_sub">05</span>
+                    <h3 class="bar-title" data-i18n="methodology_phase_5"></h3>
+                    <p class="bar-desc" data-i18n="methodology_phase_5_desc"></p>
+                  </div>
+                  <div class="bar-ground-dot"></div>
+                </div>
+              </div>
+
+              <div class="chart-baseline">
+                <div class="baseline-line"></div>
+                <div class="baseline-arrow-end">
+                  <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Mobile-Only Phases List (Innovative Vertical Path) ── -->
+            <div class="mobile-phases-list desktop-hide">
+              <div class="mobile-phase-card" data-reveal="fade-up">
+                <div class="phase-card-header">
+                  <span class="phase-card-num">01</span>
+                  <h3 data-i18n="methodology_phase_1"></h3>
+                </div>
+                <p data-i18n="methodology_phase_1_desc"></p>
+              </div>
+              <div class="mobile-phase-card" data-reveal="fade-up">
+                <div class="phase-card-header">
+                  <span class="phase-card-num">02</span>
+                  <h3 data-i18n="methodology_phase_2"></h3>
+                </div>
+                <p data-i18n="methodology_phase_2_desc"></p>
+              </div>
+              <div class="mobile-phase-card" data-reveal="fade-up">
+                <div class="phase-card-header">
+                  <span class="phase-card-num">03</span>
+                  <h3 data-i18n="methodology_phase_3"></h3>
+                </div>
+                <p data-i18n="methodology_phase_3_desc"></p>
+              </div>
+              <div class="mobile-phase-card" data-reveal="fade-up">
+                <div class="phase-card-header">
+                  <span class="phase-card-num">04</span>
+                  <h3 data-i18n="methodology_phase_4"></h3>
+                </div>
+                <p data-i18n="methodology_phase_4_desc"></p>
+              </div>
+              <div class="mobile-phase-card" data-reveal="fade-up">
+                <div class="phase-card-header">
+                  <span class="phase-card-num">05</span>
+                  <h3 data-i18n="methodology_phase_5"></h3>
+                </div>
+                <p data-i18n="methodology_phase_5_desc"></p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div
+            class="diagram-tagline"
+            data-reveal="fade-up"
+            data-reveal-delay="400">
+            <i class="fas fa-layer-group" aria-hidden="true"></i>
+            <span data-i18n="methodology_tagline"
+              >تكامل &nbsp;•&nbsp; تدرج &nbsp;•&nbsp; تراكم &nbsp;•&nbsp;
+              استدامة</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════ CLOSING CTA ═══════════════════════ -->
+      <section class="closing-cta" id="contact" aria-labelledby="cta-heading">
+        <div class="cta-geo" aria-hidden="true">
+          <div class="cta-geo-ring cta-r1"></div>
+          <div class="cta-geo-ring cta-r2"></div>
+          <div class="cta-geo-ring cta-r3"></div>
+        </div>
+        <div class="cta-inner">
+          <div data-reveal="zoom-in-up">
+            <div class="cta-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text" data-i18n="methodology_conclusion"
+                >منهجية NORM ليست مجرد إجراء إداري، بل هي البنية الرصينة التي
+                يرتكز عليها القرار</span
+              >
+              <span class="eyebrow-line"></span>
+            </div>
+            <h2
+              class="heading-1 cta-headline-spacing"
+              id="cta-heading"
+              data-i18n="methodology_quote">
+              نحن لا نصمم وثائق، بل نصمم البيئة التي تُولد فيها القرارات الرشيدة
+            </h2>
+            <a
+              href="index.html#contact"
+              class="btn btn-primary btn-lg en-font"
+              data-i18n="methodology_engage"
+              >فعّل منطق NORM الآن</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="images/logo.png"
+                alt="NORM"
+                class="footer-logo-img"
+                loading="lazy" />
+              <span class="footer-brand-name">NORM</span>
+            </div>
+            <p class="footer-tagline" data-i18n="footer_tagline">
+              هندسة القرار. استدامة الأثر.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="X (Twitter)"
+                ><i class="fab fa-x-twitter"></i>
+              </a>
+              <a
+                href="mailto:ask@NORM.sa"
+                class="social-link"
+                aria-label="Email"
+                ><i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-title" data-i18n="footer_title_links">
+              روابط المنظومة
+            </h4>
+            <ul class="footer-links">
+              <li>
+                <a href="methodology.html" data-i18n="footer_link1">المنهجية</a>
+              </li>
+              <li>
+                <a href="index.html#about" data-i18n="footer_link2"
+                  >المنظومات</a
+                >
+              </li>
+              <li>
+                <a href="index.html#insights" data-i18n="footer_link3">الرؤى</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-title" data-i18n="footer_title_contact">
+              بيانات التواصل
+            </h4>
+            <a href="mailto:ask@NORM.sa" class="footer-contact"
+              ><i class="fas fa-envelope"></i> <span>ask@NORM.sa</span></a
+            >
+            <a
+              href="https://maps.app.goo.gl/yhGBuXACHJ947iiZ6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-contact"
+              ><i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="footer_location"
+                >جدة، المملكة العربية السعودية</span
+              ></a
+            >
+          </div>
+        </div>
+
+        <div class="footer-disclaimer">
+          <p class="text-small" data-i18n="footer_legal">
+            محتوى هذا الموقع لأغراض تعريفية فقط. علاقة العمل تبدأ بنموذج تأهيل
+            رسمي وتحكمها اتفاقيات سرية.
+          </p>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <p class="footer-copyright text-small">
+              &copy; <span id="currentYear"></span> NORM.
+              <span data-i18n="footer_rights"
+                >جميع الحقوق محفوظة. سيادة المعرفة المؤسسية.</span
+              >
+            </p>
+            <div class="footer-policies">
+              <a href="#" data-i18n="privacy_policy">سياسة الخصوصية</a>
+              <span class="sep">|</span>
+              <a href="#" data-i18n="terms_conditions">الشروط والأحكام</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>

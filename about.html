@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>من نحن | NORM</title>
+
+    <!-- ══ SEO Core ════════════════════════════════════════════ -->
+    <meta
+      name="description"
+      content="من نحن | NORM مؤسسة استشارية تنفيذية تتمركز كعقل مؤسسي ضابط، نمنح القيادات الاستراتيجية المعيار والمسطرة لهندسة القرارات الكبرى." />
+    <meta name="author" content="NORM Decision Architecture House" />
+    <meta name="theme-color" content="#07000F" />
+    <link rel="canonical" href="https://amr-an3m.github.io/NORM_House/about.html" />
+
+    <!-- ══ Open Graph ════════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amr-an3m.github.io/NORM_House/about.html" />
+    <meta property="og:title" content="من نحن | NORM — دار هندسة القرار" />
+    <meta
+      property="og:description"
+      content="NORM مؤسسة استشارية تنفيذية تتمركز كعقل مؤسسي ضابط، تمنح القيادات الاستراتيجية المعيار والمسطرة لهندسة القرارات الكبرى." />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ══ Favicon & Icons ═══════════════════════════════════════ -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
+
+    <!-- ══ Preload Critical Assets ══════════════════════════════ -->
+    <link rel="preload" href="images/logo.png" as="image" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+
+    <!-- ══ Icons (Font Awesome) ══════════════════════════════ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- ══ Fonts ════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" />
+
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- ══ Critical: Language Flash Prevention ══════════════════ -->
+    <script>
+      (function () {
+        const savedLang = localStorage.getItem("lang");
+        const browserLang = navigator.language.startsWith("en") ? "en" : "ar";
+        const lang = savedLang || browserLang;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        document.documentElement.classList.add("js-loading");
+      })();
+    </script>
+    <style>
+      .js-loading body > *:not(.loader-screen) {
+        opacity: 0;
+      }
+      .js-loading .loader-screen {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ═══════════════════════ Scroll Progress ═══════════════════════ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ═══════════════════════ Menu Overlay (mobile) ══════════════════ -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="القائمة الرئيسية">
+      <div class="nav-container">
+        <!-- ── Brand ── -->
+        <div class="nav-brand">
+          <a href="index.html" class="logo-link">
+            <img
+              src="images/logo.png"
+              alt="NORM"
+              class="logo-img"
+              loading="lazy" />
+            <span class="logo-text">NORM</span>
+          </a>
+        </div>
+
+        <!-- ── Navigation Menu (Desktop Inline / Mobile Sidebar) ── -->
+        <div class="nav-menu" id="navMenu">
+          <div class="nav-menu-header">
+            <div class="nav-brand">
+              <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="NORM" class="logo-img" />
+                <span class="logo-text">NORM</span>
+              </a>
+            </div>
+            <button
+              class="mobile-close"
+              id="mobileClose"
+              aria-label="إغلاق القائمة">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="nav-menu-body">
+            <ul class="nav-links" role="list">
+              <li>
+                <a href="about.html" class="active" data-i18n="nav_about"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a href="methodology.html" data-i18n="nav_methodology"
+                  >المنهجية</a
+                >
+              </li>
+              <li>
+                <a href="index.html#services" data-i18n="nav_services"
+                  >المنظومات</a
+                >
+              </li>
+              <li>
+                <a href="index.html#investment" data-i18n="nav_investment"
+                  >الإستثمار</a
+                >
+              </li>
+              <li>
+                <a href="index.html#insights" data-i18n="nav_insights">الرؤى</a>
+              </li>
+              <li>
+                <a href="index.html#contact" data-i18n="nav_contact">التواصل</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-menu-footer">
+            <div class="mobile-nav-actions">
+              <button
+                class="lang-toggle"
+                data-lang-toggle
+                aria-label="تبديل اللغة">
+                <i class="fas fa-globe"></i>
+                <span class="lang-text">EN</span>
+              </button>
+              <a
+                href="index.html#contact"
+                class="btn btn-primary btn-sm menu-cta"
+                data-i18n="cta_start"
+                >ابدأ التأهيل</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Desktop Actions ── -->
+        <div class="nav-actions desktop-only">
+          <button class="lang-toggle" data-lang-toggle aria-label="تبديل اللغة">
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+          <a
+            href="index.html#contact"
+            class="btn btn-primary btn-sm"
+            data-i18n="cta_start"
+            >ابدأ التأهيل</a
+          >
+        </div>
+
+        <!-- ── Mobile Toggle ── -->
+        <button
+          class="mobile-toggle"
+          id="mobileToggle"
+          aria-label="فتح القائمة"
+          aria-expanded="false"
+          aria-controls="navMenu">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ══ MAIN CONTENT ══════════════════════════════════════════ -->
+    <main id="main-content">
+      <!-- ══ PAGE HERO ═══════════════════════════════════════════ -->
+      <section class="page-hero" aria-label="من نحن">
+        <div class="container" data-reveal="fade-up">
+          <span class="page-subtitle" data-i18n="about_pg_title"
+            >دار هندسة القرار</span
+          >
+          <h1 class="page-title heading-1" data-i18n="about">من نحن</h1>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html" data-i18n="index">الرئيسية /</a>
+
+            <span class="current" data-i18n="about">من نحن</span>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ══ DEFINITION SECTION ═════════════════════════════════ -->
+      <section class="about-def" aria-labelledby="def-heading">
+        <div class="container">
+          <div class="def-grid">
+            <div class="def-text" data-reveal="fade-right">
+              <h2
+                class="heading-2"
+                id="def-heading"
+                data-i18n="about_def_title">
+                من هي NORM
+              </h2>
+              <p class="text-body def-desc" data-i18n="about_def_p1">
+                نحن متخصصون في مجال التطوير الصناعي والإداري وهندسة القرار
+                لمختلف أنواع المنظمات في القطاع العام، الخاص، وغير الربحي. نعمل
+                من خلال خبرات مميزة وفلسفة عالمية تضمن تحقيق سيادة المعرفة
+                المؤسسية.
+              </p>
+              <p class="text-body def-desc" data-i18n="about_def_p2">
+                نعتمد في NORM على فلسفة "أولويات التطوير (DPP)"، حيث نشارك
+                العميل في إنجاز مشاريع تتكيف بشكل كامل مع الوضع الحالي للمنظمة،
+                ونعمل يداً بيد لتخفيض المخاطر قبل البدء في أي برامج تطويرية قد
+                تؤثر سلباً على المنشأة إذا لم تتم هندستها بمنطق سليم.
+              </p>
+            </div>
+            <div class="def-visual" data-reveal="fade-left">
+              <lottie-player
+                src="images/about-team.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; max-width: 500px; height: auto"
+                loop
+                autoplay
+                aria-label="رسوم متحركة تعريفية بفريق NORM"
+                role="img"></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ POSITIONING SECTION (Matches Decision Gap Style) ══════════════ -->
+      <section class="decision-gap" id="decision" aria-labelledby="pos-heading">
+        <div class="container">
+          <div class="gap-head" data-reveal="fade-up">
+            <div class="section-eyebrow light">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text" data-i18n="about_pos_eyebrow"
+                >التمركز الاستراتيجي</span
+              >
+            </div>
+            <h2
+              class="heading-2 text-inverse"
+              id="pos-heading"
+              data-i18n="about_pos_title">
+              لمن نعمل؟
+            </h2>
+          </div>
+
+          <div class="gap-pillars">
+            <div
+              class="gap-pillar"
+              data-reveal="fade-up"
+              data-reveal-delay="100">
+              <div class="pillar-icon">
+                <i class="fas fa-chess-queen"></i>
+              </div>
+              <h3 class="heading-3 text-inverse" data-i18n="pos_card1_title">
+                المُلّاك والمساهمون
+              </h3>
+              <p class="pillar-text" data-i18n="pos_card1_desc">
+                حماية الأصول وهندسة نماذج الاستثمار قبل الالتزام المالي، لضمان
+                نمو مرن ومستدام.
+              </p>
+            </div>
+            <div class="gap-divider" aria-hidden="true"></div>
+            <div
+              class="gap-pillar"
+              data-reveal="fade-up"
+              data-reveal-delay="200">
+              <div class="pillar-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3 class="heading-3 text-inverse" data-i18n="pos_card2_title">
+                الشركاء الاستراتيجيون
+              </h3>
+              <p class="pillar-text" data-i18n="pos_card2_desc">
+                بناء أطر شراكة وحوكمة مؤسسية تضمن وضوح الأدوار وحماية المصالح
+                المشتركة.
+              </p>
+            </div>
+            <div class="gap-divider" aria-hidden="true"></div>
+            <div
+              class="gap-pillar"
+              data-reveal="fade-up"
+              data-reveal-delay="300">
+              <div class="pillar-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="heading-3 text-inverse" data-i18n="pos_card3_title">
+                الإدارة التنفيذية العليا
+              </h3>
+              <p class="pillar-text" data-i18n="pos_card3_desc">
+                تقديم منصة القيادة والتمكين المؤسسي لتحويل الرؤى الاستراتيجية
+                إلى نجاحات تنفيذية على أرض الواقع.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ DIFFERENTIATION SECTION ════════════════════════════ -->
+      <section class="about-diff" aria-labelledby="diff-heading">
+        <div class="container">
+          <div class="diff-header" data-reveal="fade-up">
+            <h2
+              class="heading-2"
+              id="diff-heading"
+              data-i18n="about_diff_title">
+              ما يُميزنا عن الاستشارة التقليدية
+            </h2>
+            <p class="text-body diff-subtitle" data-i18n="about_diff_subtitle">
+              في الوقت الذي تكتفي فيه المكاتب التقليدية بتقديم التوصيات، نحن
+              نتحمل مسؤولية صناعة الأثر.
+            </p>
+          </div>
+
+          <div class="diff-timeline">
+            <div
+              class="diff-item"
+              data-reveal="fade-left"
+              data-reveal-delay="100">
+              <div class="diff-num">01</div>
+              <div class="diff-content">
+                <h3 class="heading-3" data-i18n="diff_item1_title">
+                  الاستشاري التنفيذي
+                </h3>
+                <p class="text-body" data-i18n="diff_item1_desc">
+                  مستشارونا ليسوا منظرين، بل قادة سابقون أداروا كيانات حقيقية.
+                  الحلول التي نقدمها نابعة من "تحديات الواقع" وليس من النظريات
+                  الأكاديمية المجردة.
+                </p>
+              </div>
+            </div>
+            <div
+              class="diff-item"
+              data-reveal="fade-right"
+              data-reveal-delay="200">
+              <div class="diff-num">02</div>
+              <div class="diff-content">
+                <h3 class="heading-3" data-i18n="diff_item2_title">
+                  التسعير المبني على القيمة
+                </h3>
+                <p class="text-body" data-i18n="diff_item2_desc">
+                  ترتبط أتعابنا مباشرة بحجم القيمة والأثر الاستراتيجي المحقق،
+                  مما يجعلنا شركاء حقيقيين في حماية مصالحك بدلاً من مجرد مقدمي
+                  خدمة.
+                </p>
+              </div>
+            </div>
+            <div
+              class="diff-item"
+              data-reveal="fade-left"
+              data-reveal-delay="300">
+              <div class="diff-num">03</div>
+              <div class="diff-content">
+                <h3 class="heading-3" data-i18n="diff_item3_title">
+                  الذكاء الاصطناعي بعقل ضابط
+                </h3>
+                <p class="text-body" data-i18n="diff_item3_desc">
+                  نستخدم التقنية كـ "مُمكّن فائق السرعة" لمعالجة البيانات
+                  الضخمة، لكننا نُخضع كل مُخرج لفلترة العقل البشري الخبير.
+                  التقنية تمنحنا السرعة، والخبرة تمنحك الثقة.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ DECISIVE SENTENCE ══════════════════════════════════ -->
+      <section class="about-decisive">
+        <div class="container text-center">
+          <h2 class="decisive-text" data-reveal="zoom-in">
+            <span data-i18n="about_decisive_p1">نحن لا نقدم نصائح جاهزة،</span
+            ><br />
+            <span data-i18n="about_decisive_p2"
+              >بل نبني المنظومة التي تجعل قراراتك الكبرى</span
+            >
+            <span class="highlight" data-i18n="about_decisive_p3"
+              >قابلة للدفاع.</span
+            >
+          </h2>
+        </div>
+      </section>
+
+      <!-- ══ CLOSING CTA ════════════════════════════════════════ -->
+      <section class="closing-cta" id="contact" aria-labelledby="cta-heading">
+        <div class="cta-geo" aria-hidden="true">
+          <div class="cta-geo-ring cta-r1"></div>
+          <div class="cta-geo-ring cta-r2"></div>
+          <div class="cta-geo-ring cta-r3"></div>
+        </div>
+        <div class="cta-inner">
+          <div data-reveal="zoom-in-up">
+            <div class="cta-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text" data-i18n="cta_label"
+                >لنبدأ العمل معًا</span
+              >
+              <span class="eyebrow-line"></span>
+            </div>
+            <h2
+              class="heading-1 cta-headline-spacing"
+              id="cta-heading"
+              data-i18n="cta_title">
+              لنبدأ اليوم هندسة قرارك القادم.
+            </h2>
+            <a
+              href="mailto:ask@NORM.sa"
+              class="btn btn-primary btn-lg"
+              data-i18n="cta_btn"
+              >ابدأ عملية التأهيل</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="images/logo.png"
+                alt="NORM"
+                class="footer-logo-img"
+                loading="lazy" />
+              <span class="footer-brand-name">NORM</span>
+            </div>
+            <p class="footer-tagline" data-i18n="footer_tagline">
+              هندسة القرار. استدامة الأثر.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="X (Twitter)"
+                ><i class="fab fa-x-twitter"></i>
+              </a>
+              <a
+                href="mailto:ask@NORM.sa"
+                class="social-link"
+                aria-label="Email"
+                ><i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-title" data-i18n="footer_title_links">
+              روابط المنظومة
+            </h4>
+            <ul class="footer-links">
+              <li>
+                <a href="methodology.html" data-i18n="footer_link1">المنهجية</a>
+              </li>
+              <li>
+                <a href="index.html#about" data-i18n="footer_link2"
+                  >المنظومات</a
+                >
+              </li>
+              <li>
+                <a href="index.html#insights" data-i18n="footer_link3">الرؤى</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-title" data-i18n="footer_title_contact">
+              بيانات التواصل
+            </h4>
+            <a href="mailto:ask@NORM.sa" class="footer-contact"
+              ><i class="fas fa-envelope"></i> <span>ask@NORM.sa</span></a
+            >
+            <a
+              href="https://maps.app.goo.gl/yhGBuXACHJ947iiZ6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-contact"
+              ><i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="footer_location"
+                >جدة، المملكة العربية السعودية</span
+              ></a
+            >
+          </div>
+        </div>
+
+        <div class="footer-disclaimer">
+          <p class="text-small" data-i18n="footer_legal">
+            محتوى هذا الموقع لأغراض تعريفية فقط. علاقة العمل تبدأ بنموذج تأهيل
+            رسمي وتحكمها اتفاقيات سرية.
+          </p>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <p class="footer-copyright text-small">
+              &copy; <span id="currentYear"></span> NORM.
+              <span data-i18n="footer_rights"
+                >جميع الحقوق محفوظة. سيادة المعرفة المؤسسية.</span
+              >
+            </p>
+            <div class="footer-policies">
+              <a href="#" data-i18n="privacy_policy">سياسة الخصوصية</a>
+              <span class="sep">|</span>
+              <a href="#" data-i18n="terms_conditions">الشروط والأحكام</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>
